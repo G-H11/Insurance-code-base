@@ -1,0 +1,491 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userInfo",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_medicalRecord",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_customerMdeicalInsurance",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_mdeicalInsurancePolicy",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_company",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "src",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "guy",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "dst",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposit",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "src",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "dst",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "src",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawal",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "guy",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "src",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "recodeId",
+						"type": "uint256"
+					}
+				],
+				"name": "atuoBeneficiarieTransfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "src",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "recodeId",
+						"type": "uint256"
+					}
+				],
+				"name": "atuoTransfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_str1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_str2",
+						"type": "string"
+					}
+				],
+				"name": "compareStr",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "dst",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "src",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "dst",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "wad",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"baoxian/data/token/WETH9.sol": "WETH9"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"baoxian/data/basedata/Company.sol": {
+			"keccak256": "0x22f8e8f0a3119d8b6b3dfb4fd57e5ff66c7f268780818d66b13fefcd52d1ba07",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ecf58017686b667c4ed73f5222d3b2463c4d62657a55c031113db9f62632614b",
+				"dweb:/ipfs/QmSMXQbdjqCWMmDkDhJL9z45xwVCvprJ97zyZukcKL7Mt1"
+			]
+		},
+		"baoxian/data/basedata/UserInfo.sol": {
+			"keccak256": "0x4b08574de757f9a65e94db4013bfa3b0d0be12ad1bc4ff2b23bb5fdbf9dc7a25",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4caa666ca84d15b84a4700a61bf1b6529e988bbd453e3b99999b6ea15120827f",
+				"dweb:/ipfs/QmYGN66qEPdVbqpLkXTTy3S7Z14bWFyph5GXuGaHqM5UBq"
+			]
+		},
+		"baoxian/data/insurancedata/CustomerMdeicalInsurance.sol": {
+			"keccak256": "0x2bd467707f9d359a38cdc67817cc252a2cf6aecdbf5f0d2eee6a555d991b9f24",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a6a4cbd3902d613a0096ca91569b6036a4f0dc362aaed821d85176b8f6cfec90",
+				"dweb:/ipfs/QmTCPs8TCdNy3rdftVxM71uwUbdVJAcESHLjhieGwgxsa3"
+			]
+		},
+		"baoxian/data/insurancedata/MdeicalInsurancePolicy.sol": {
+			"keccak256": "0x50d18cd983ad79262c0368068bcc98f8bfd0148c537a6153fdc41031855eb4ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://174af480c25a03de69b5806da69a4a77eb69047be951e9368463d7ffd8e74b64",
+				"dweb:/ipfs/QmSdT7dYKgGcNkxdXw1vzce5XYA18PTnJMvLrA4wwb46TA"
+			]
+		},
+		"baoxian/data/medicaldata/MedicalRecord.sol": {
+			"keccak256": "0x656aedbbd523b5846d70f44f72afc4fa6cf6df14f32c69c516cc8f539c7a8542",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bcacf66b13a75a14e1dcc5038564f6aa1d180d36efef8c97fad9e169c5ae44d0",
+				"dweb:/ipfs/Qmbtkehi6zbaXQHQk4hRU3n2iJvvG4RbNTtdtqMUXDBQyf"
+			]
+		},
+		"baoxian/data/token/WETH9.sol": {
+			"keccak256": "0x7f4fed779ef20561a8341ecd6be3cbbe87df592afd47db670eb9406b7f530f63",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0df814e200f9537b9947a6f4cf577da057dfae219d545f4f8220e5dd807ca5bf",
+				"dweb:/ipfs/QmUc7ckNg5SMM7eqyc3fWxjz5BEzjXuRTZ5EagvbRkv4wF"
+			]
+		},
+		"baoxian/manager/BasicAuth.sol": {
+			"keccak256": "0x07915d9741277212ebc0d96512482def33698eb3a71ec0e2bcba252568fa7375",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a5fe1ef56ba5df4353e9bdc852ac0c3e500c8fec9f1ca7b616c6573fc96a2d1e",
+				"dweb:/ipfs/QmWxe4dn16qmZMBapHbvf5qNXivLFJeiVK3TQ6cgLVMWBv"
+			]
+		}
+	},
+	"version": 1
+}

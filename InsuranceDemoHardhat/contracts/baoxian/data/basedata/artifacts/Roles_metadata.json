@@ -1,0 +1,171 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "bakOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "_bakOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "roleId",
+						"type": "uint8"
+					}
+				],
+				"name": "getRole",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "roleType",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "roleName",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Roles.Role",
+						"name": "role",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "setBakOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "roleId",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "roleType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "roleName",
+						"type": "string"
+					}
+				],
+				"name": "setRole",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"baoxian/data/basedata/Roles.sol": "Roles"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"baoxian/data/basedata/Roles.sol": {
+			"keccak256": "0xb1ec374751877c9e3a903b9f07f5118638ea36b2906fef3693273fdaa660cbb0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cfa19413bd1d4d89ca0ffaaa4881f4cb6fc509cf64b9bab1295cb54865a7225",
+				"dweb:/ipfs/QmPB6cMJRQWGeTB4KPsTbU8tv9fHStEgpUQ8rnfBF7PSr2"
+			]
+		},
+		"baoxian/manager/BasicAuth.sol": {
+			"keccak256": "0x983b5431b65ddf7ec3d58714a326e42b0545b65410d9453cc1bd5405fa8b4991",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cdd0639a0b38ee4a218084d6e2244a746711b77e35d4fb15e1ab30fe34329659",
+				"dweb:/ipfs/QmdmqQpUGqbLcPPyrJ6cqfsLPPrANXCBRj4hSFHCgGEEHa"
+			]
+		}
+	},
+	"version": 1
+}

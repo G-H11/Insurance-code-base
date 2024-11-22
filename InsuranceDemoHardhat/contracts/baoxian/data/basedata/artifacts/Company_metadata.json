@@ -1,0 +1,159 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "bakOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "_bakOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					}
+				],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "payAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "setBakOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "companyName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "payAddress",
+						"type": "address"
+					}
+				],
+				"name": "setData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"baoxian/data/basedata/Company.sol": "Company"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"baoxian/data/basedata/Company.sol": {
+			"keccak256": "0xb613aaee03407c2060653449413df422fce964742076f14d9a4eac366f64c2d6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8bf6fbf8dd48782a244b2f3388be02ca7eb4cdaffa3b74a9284c306691158c49",
+				"dweb:/ipfs/QmS8574duvHdY5PU9wALr8T5jTew7yuhAVAraXCGw1BbvQ"
+			]
+		},
+		"baoxian/manager/BasicAuth.sol": {
+			"keccak256": "0x983b5431b65ddf7ec3d58714a326e42b0545b65410d9453cc1bd5405fa8b4991",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cdd0639a0b38ee4a218084d6e2244a746711b77e35d4fb15e1ab30fe34329659",
+				"dweb:/ipfs/QmdmqQpUGqbLcPPyrJ6cqfsLPPrANXCBRj4hSFHCgGEEHa"
+			]
+		}
+	},
+	"version": 1
+}

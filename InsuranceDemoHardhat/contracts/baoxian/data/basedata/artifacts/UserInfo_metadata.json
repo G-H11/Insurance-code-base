@@ -1,0 +1,595 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "bakOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "_bakOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "userId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "birthdate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "idNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "email",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "addr",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "roleId",
+						"type": "uint8"
+					}
+				],
+				"name": "addUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "uAddr",
+						"type": "address"
+					}
+				],
+				"name": "auditAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "uAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "roleId",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAudit",
+						"type": "bool"
+					}
+				],
+				"name": "auditEmploy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_str1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_str2",
+						"type": "string"
+					}
+				],
+				"name": "compareStr",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEmployData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "idNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "position",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "companyId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "creditInformation",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct UserInfo.EmployData",
+						"name": "_employData",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userAddr",
+						"type": "address"
+					}
+				],
+				"name": "getEmployData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "idNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "position",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "companyId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "creditInformation",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct UserInfo.EmployData",
+						"name": "_employData",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEncryptedKeyValue",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getUser",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "userId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "gender",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "birthdate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "idNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "addr",
+								"type": "string"
+							},
+							{
+								"internalType": "uint8",
+								"name": "roleId",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "isDeath",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct UserInfo.User",
+						"name": "_user",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "uAddr",
+						"type": "address"
+					}
+				],
+				"name": "getUserByOtherPerson",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "userId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "gender",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "birthdate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "idNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "addr",
+								"type": "string"
+							},
+							{
+								"internalType": "uint8",
+								"name": "roleId",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "isDeath",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct UserInfo.User",
+						"name": "user",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "idNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "position",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					}
+				],
+				"name": "registerAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "setBakOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					}
+				],
+				"name": "setEncryptedKeyValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "uAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isDeath",
+						"type": "bool"
+					}
+				],
+				"name": "setUserDeath",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "uAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAudit",
+						"type": "bool"
+					}
+				],
+				"name": "setUserDeathAudit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "userId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "birthdate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "idNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "email",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "addr",
+						"type": "string"
+					}
+				],
+				"name": "updateUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"baoxian/data/basedata/UserInfo.sol": "UserInfo"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"baoxian/data/basedata/UserInfo.sol": {
+			"keccak256": "0xdb32ba2217b7acf5fb924d077a34f0843af8c8b1d5fd02048ae3810db7099290",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fee3ea53aca709f54071f5faf5094b19e0d2506161b78f8d26e78bc65c3df975",
+				"dweb:/ipfs/QmZgx1pefGEKjQkf359HViF3mDwmUryGAscKcDuKcK3ep1"
+			]
+		},
+		"baoxian/manager/BasicAuth.sol": {
+			"keccak256": "0x983b5431b65ddf7ec3d58714a326e42b0545b65410d9453cc1bd5405fa8b4991",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cdd0639a0b38ee4a218084d6e2244a746711b77e35d4fb15e1ab30fe34329659",
+				"dweb:/ipfs/QmdmqQpUGqbLcPPyrJ6cqfsLPPrANXCBRj4hSFHCgGEEHa"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,254 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userInfo",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "insurerceId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isEffect",
+						"type": "bool"
+					}
+				],
+				"name": "auditInsuranceData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_str1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_str2",
+						"type": "string"
+					}
+				],
+				"name": "compareStr",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "insurerceId",
+						"type": "uint256"
+					}
+				],
+				"name": "getMedicalInsuranceDatas",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "policyName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "policyType",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "coverage",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "premium",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "terms",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "odds",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "deathOdds1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "deathOdds2",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isEffect",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "diseaseTypeIds",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256",
+								"name": "nextIndex",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct MdeicalInsurancePolicy.MedicalInsuranceData",
+						"name": "_MedicalInsuranceData",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "policyName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "policyType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "coverage",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "premium",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "terms",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "odds",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "diseaseTypeIds",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nextIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "setInsuranceData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"baoxian/data/insurancedata/MdeicalInsurancePolicy.sol": "MdeicalInsurancePolicy"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"baoxian/data/basedata/UserInfo.sol": {
+			"keccak256": "0x4b08574de757f9a65e94db4013bfa3b0d0be12ad1bc4ff2b23bb5fdbf9dc7a25",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4caa666ca84d15b84a4700a61bf1b6529e988bbd453e3b99999b6ea15120827f",
+				"dweb:/ipfs/QmYGN66qEPdVbqpLkXTTy3S7Z14bWFyph5GXuGaHqM5UBq"
+			]
+		},
+		"baoxian/data/insurancedata/MdeicalInsurancePolicy.sol": {
+			"keccak256": "0x50d18cd983ad79262c0368068bcc98f8bfd0148c537a6153fdc41031855eb4ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://174af480c25a03de69b5806da69a4a77eb69047be951e9368463d7ffd8e74b64",
+				"dweb:/ipfs/QmSdT7dYKgGcNkxdXw1vzce5XYA18PTnJMvLrA4wwb46TA"
+			]
+		},
+		"baoxian/manager/BasicAuth.sol": {
+			"keccak256": "0x07915d9741277212ebc0d96512482def33698eb3a71ec0e2bcba252568fa7375",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a5fe1ef56ba5df4353e9bdc852ac0c3e500c8fec9f1ca7b616c6573fc96a2d1e",
+				"dweb:/ipfs/QmWxe4dn16qmZMBapHbvf5qNXivLFJeiVK3TQ6cgLVMWBv"
+			]
+		}
+	},
+	"version": 1
+}

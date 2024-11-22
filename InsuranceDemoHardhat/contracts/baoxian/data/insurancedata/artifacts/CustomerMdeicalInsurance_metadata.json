@@ -1,0 +1,482 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userInfo",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "insurerceId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "insuranceType",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "paymentAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "beneficiaries1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "beneficiaries2",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "insurerceEmployId",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "insuranceAuidt",
+						"type": "address"
+					}
+				],
+				"name": "buyInsurance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_str1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_str2",
+						"type": "string"
+					}
+				],
+				"name": "compareStr",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "custAddr",
+						"type": "address"
+					}
+				],
+				"name": "getInsurance",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "insurerceId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "companyId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "insuranceStatus",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "insuranceType",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "insuranceAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "enrollmentStartDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "enrollmentEndDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "paymentStatus",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "paymentAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "paymentDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "insurerceEmployId",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "claimStatus",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "claimTotalAmout",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "insuranceAuidt",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CustomerMdeicalInsurance.CustomerInsurance",
+						"name": "_customerInsurance",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getInsurance",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "insurerceId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "companyId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "insuranceStatus",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "insuranceType",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "insuranceAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "enrollmentStartDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "enrollmentEndDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "paymentStatus",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "paymentAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "paymentDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "insurerceEmployId",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "claimStatus",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "claimTotalAmout",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "insuranceAuidt",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CustomerMdeicalInsurance.CustomerInsurance",
+						"name": "_customerInsurance",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getInsuranceBeneficiarie",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "insurerceId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint8",
+								"name": "order",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "claimAmout",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "userId",
+								"type": "address"
+							}
+						],
+						"internalType": "struct CustomerMdeicalInsurance.Beneficiarie",
+						"name": "_beneficiarie",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getInsuranceByBeneficiarie",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "insurerceId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "companyId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "insuranceStatus",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "insuranceType",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "insuranceAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "enrollmentStartDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "enrollmentEndDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "paymentStatus",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "paymentAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "paymentDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "insurerceEmployId",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "claimStatus",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "claimTotalAmout",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "insuranceAuidt",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CustomerMdeicalInsurance.CustomerInsurance",
+						"name": "_customerInsurance",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenContract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "claimAmout",
+						"type": "uint256"
+					}
+				],
+				"name": "updateInsurance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"baoxian/data/insurancedata/CustomerMdeicalInsurance.sol": "CustomerMdeicalInsurance"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"baoxian/data/basedata/UserInfo.sol": {
+			"keccak256": "0x4b08574de757f9a65e94db4013bfa3b0d0be12ad1bc4ff2b23bb5fdbf9dc7a25",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4caa666ca84d15b84a4700a61bf1b6529e988bbd453e3b99999b6ea15120827f",
+				"dweb:/ipfs/QmYGN66qEPdVbqpLkXTTy3S7Z14bWFyph5GXuGaHqM5UBq"
+			]
+		},
+		"baoxian/data/insurancedata/CustomerMdeicalInsurance.sol": {
+			"keccak256": "0x2bd467707f9d359a38cdc67817cc252a2cf6aecdbf5f0d2eee6a555d991b9f24",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a6a4cbd3902d613a0096ca91569b6036a4f0dc362aaed821d85176b8f6cfec90",
+				"dweb:/ipfs/QmTCPs8TCdNy3rdftVxM71uwUbdVJAcESHLjhieGwgxsa3"
+			]
+		},
+		"baoxian/manager/BasicAuth.sol": {
+			"keccak256": "0x07915d9741277212ebc0d96512482def33698eb3a71ec0e2bcba252568fa7375",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a5fe1ef56ba5df4353e9bdc852ac0c3e500c8fec9f1ca7b616c6573fc96a2d1e",
+				"dweb:/ipfs/QmWxe4dn16qmZMBapHbvf5qNXivLFJeiVK3TQ6cgLVMWBv"
+			]
+		}
+	},
+	"version": 1
+}

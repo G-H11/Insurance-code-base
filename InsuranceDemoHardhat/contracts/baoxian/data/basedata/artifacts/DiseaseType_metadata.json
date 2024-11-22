@@ -1,0 +1,154 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "bakOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "_bakOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "diseaseTypeId",
+						"type": "uint256"
+					}
+				],
+				"name": "getDiseaseType",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "diseaseName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "setBakOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "diseaseTypeId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "diseaseName",
+						"type": "string"
+					}
+				],
+				"name": "setDiseaseType",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"baoxian/data/basedata/DiseaseType.sol": "DiseaseType"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"baoxian/data/basedata/DiseaseType.sol": {
+			"keccak256": "0x7e969d2b62c366458379adb4045bb8ee7f49e4f994b13514684ae0b9101e5767",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d358d1b2f49da8466b102f410ee6795d3e7e9981895edadfa652078bc1b115c",
+				"dweb:/ipfs/QmSGCGSvn9RuipHwcGy8gbWTaFqc52tc18yMYDNR3KuoUF"
+			]
+		},
+		"baoxian/manager/BasicAuth.sol": {
+			"keccak256": "0x983b5431b65ddf7ec3d58714a326e42b0545b65410d9453cc1bd5405fa8b4991",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cdd0639a0b38ee4a218084d6e2244a746711b77e35d4fb15e1ab30fe34329659",
+				"dweb:/ipfs/QmdmqQpUGqbLcPPyrJ6cqfsLPPrANXCBRj4hSFHCgGEEHa"
+			]
+		}
+	},
+	"version": 1
+}

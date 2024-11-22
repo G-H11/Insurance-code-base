@@ -1,0 +1,11 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.21.0"
+  },
+  "dependencies": {
+    "chai": "^4.4.1",
+    "fs-extra": "^11.2.0"
+  }
+}

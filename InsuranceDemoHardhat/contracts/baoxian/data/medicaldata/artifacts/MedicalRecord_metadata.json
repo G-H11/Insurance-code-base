@@ -1,0 +1,450 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userInfo",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_customerMdeicalInsurance",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_mdeicalInsurancePolicy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "eventType",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "patientAddr",
+						"type": "address"
+					}
+				],
+				"name": "insertAudit",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "eventType",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "patientAddr",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "symptom",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "cause",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "day",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "money",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "hostpitolAuidt",
+						"type": "address"
+					}
+				],
+				"name": "insertRecodeEvt",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_str1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_str2",
+						"type": "string"
+					}
+				],
+				"name": "compareStr",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "recodeId",
+						"type": "uint256"
+					}
+				],
+				"name": "getPatientData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "companyId",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "TimeOfDiagnosis",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "diseaseTypeId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "symptom",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "cause",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "day",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "money",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "hostpitolAdd",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "hostpitolAuidt",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct MedicalRecord.MedicalRecordData",
+						"name": "_medicalRecordData",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "insurerceId",
+						"type": "uint256"
+					}
+				],
+				"name": "getPatientData",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isdiseaseTypeIn",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "recodeId",
+						"type": "uint256"
+					}
+				],
+				"name": "getPatientDataByBeneficiarie",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "companyId",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "TimeOfDiagnosis",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "diseaseTypeId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "symptom",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "cause",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "day",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "money",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "hostpitolAdd",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "hostpitolAuidt",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAudit",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct MedicalRecord.MedicalRecordData",
+						"name": "_medicalRecordData",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "companyId",
+						"type": "string"
+					}
+				],
+				"name": "initPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "patientAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "diseaseTypeId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "symptom",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cause",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "day",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "hostpitolAuidt",
+						"type": "address"
+					}
+				],
+				"name": "insertPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "patientAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "recordCnt",
+						"type": "uint256"
+					}
+				],
+				"name": "insertPatientAudit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "patientAddr",
+						"type": "address"
+					}
+				],
+				"name": "isPatientExist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"baoxian/data/medicaldata/MedicalRecord.sol": "MedicalRecord"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"baoxian/data/basedata/UserInfo.sol": {
+			"keccak256": "0x5f1a08ca361420d8785f43eb2adc5ecc70edb5bb1d68ff09e32ca6403bd6d9cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f1cd30c17fa7659639ecc822e9870f605a8b67fc7cc25a03de7742c364a2dbc",
+				"dweb:/ipfs/QmU9pHnDobedgWTQECWpnbevXELPiyspPpgTdvg2KghtQr"
+			]
+		},
+		"baoxian/data/insurancedata/CustomerMdeicalInsurance.sol": {
+			"keccak256": "0x2bd467707f9d359a38cdc67817cc252a2cf6aecdbf5f0d2eee6a555d991b9f24",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a6a4cbd3902d613a0096ca91569b6036a4f0dc362aaed821d85176b8f6cfec90",
+				"dweb:/ipfs/QmTCPs8TCdNy3rdftVxM71uwUbdVJAcESHLjhieGwgxsa3"
+			]
+		},
+		"baoxian/data/insurancedata/MdeicalInsurancePolicy.sol": {
+			"keccak256": "0x50d18cd983ad79262c0368068bcc98f8bfd0148c537a6153fdc41031855eb4ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://174af480c25a03de69b5806da69a4a77eb69047be951e9368463d7ffd8e74b64",
+				"dweb:/ipfs/QmSdT7dYKgGcNkxdXw1vzce5XYA18PTnJMvLrA4wwb46TA"
+			]
+		},
+		"baoxian/data/medicaldata/MedicalRecord.sol": {
+			"keccak256": "0x656aedbbd523b5846d70f44f72afc4fa6cf6df14f32c69c516cc8f539c7a8542",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bcacf66b13a75a14e1dcc5038564f6aa1d180d36efef8c97fad9e169c5ae44d0",
+				"dweb:/ipfs/Qmbtkehi6zbaXQHQk4hRU3n2iJvvG4RbNTtdtqMUXDBQyf"
+			]
+		},
+		"baoxian/manager/BasicAuth.sol": {
+			"keccak256": "0x8ae851797289fe3681ff56b3818dd8196beb99509b5a83ab30bb73449018e504",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e74f094091ddc07a3621dfeb91070fe335cd9b1850ef360ce9289ed3e5081954",
+				"dweb:/ipfs/QmQ8KV3drF9ZdiyocMcoQuQhZkQJqvRyd4Zj7PPi2jUfqh"
+			]
+		}
+	},
+	"version": 1
+}
